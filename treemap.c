@@ -88,7 +88,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     }
     else
     {
-      if(key>buscado->key)
+      if(key>buscado)
       {
         buscado=buscado->right;
       }

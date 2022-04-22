@@ -67,15 +67,6 @@ void eraseTreeMap(TreeMap * tree, void* key){
 
 }
 
-
-
-// int is_equal(TreeMap* tree, void* key1, void* key2){
-//     if(tree->lower_than(key1,key2)==0 &&  
-//         tree->lower_than(key2,key1)==0) return 1;
-//     else return 0;
-// }
-//El nombre de la función es lower_than, recibe dos parámetros (las claves) y retorna un entero (1 si key1<key2 y 0 si no).
-
 Pair * searchTreeMap(TreeMap * tree, void* key) 
 {
   TreeNode* aux=tree->root;
@@ -96,7 +87,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
         {
           aux=aux->left;
         }
-        
       }
     }
   return NULL;

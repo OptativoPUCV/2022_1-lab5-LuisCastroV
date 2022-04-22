@@ -84,10 +84,10 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
     {
       buscado=buscado->left;
     }
-    // else
-    // {
-    //   buscado=buscado->right;
-    // }
+    else
+    {
+      buscado=buscado->right;
+    }
   }
   return NULL;
 }

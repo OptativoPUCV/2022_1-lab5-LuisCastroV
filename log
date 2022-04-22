@@ -278,3 +278,19 @@ treemap.c:84:3: error: expected expression before ‘}’ token
    ^
 Compilation failed
 5e60193
+Fri Apr 22 15:45:38 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:81:34: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+   while(is_equal(tree,key,buscado->key == 0))
+                                  ^~
+treemap.c:83:32: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+     if(tree->lower_than(buscado->key,key)==1)
+                                ^~
+treemap.c:84:3: error: expected expression before ‘}’ token
+   }
+   ^
+Compilation failed
+35176e0

@@ -80,7 +80,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
   TreeNode* buscado=tree->root;
   while(is_equal(tree,key,buscado->key == 0))
   {
-    if(tree->lovwer_than(buscado->key,key)==1)
+    if(tree->lower_than(buscado->key,key)==1)
   }
   return NULL;
 }

@@ -616,3 +616,30 @@ treemap.c:86:3: error: expected expression before ‘}’ token
    ^
 Compilation failed
 1aaed69
+Fri Apr 22 16:09:33 UTC 2022: 
+ treemap.c | 28 +++++++++++++++-------------
+ 1 file changed, 15 insertions(+), 13 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:85:31: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+     if(is_equal(tree, key, aux->key)==1)
+                               ^~
+treemap.c:91:30: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+       if(tree->lower_than(aux->key,key)==1)
+                              ^~
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+27498c2

@@ -82,20 +82,22 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
   TreeNode* aux=tree->root;
   while(aux!=NULL)
   {
-      if(is_equal(tree, key, aux->key))
-  }
-  //int resultado = map->lower_than(aux->key,aux);
-  // while(is_equal(tree,aux->key,key) == 0)
-  // {
-  //   if(tree->lower_than(aux->key,key)== 1)
-  //   {
-  //     aux=aux->left;
-  //   }
-  //   else
-  //   {
-  //     aux=aux->right;
-  //   }
-  // }
+    if(is_equal(tree, key, aux->key)==1)
+    {
+      tree->current=aux;
+    }
+    else
+    {
+      if(tree->lower_than(aux->key,key)==1)
+      {
+        aux=aux->right;
+      }
+      else
+      {
+        aux=aux->left;
+      }
+    }
+
   return NULL;
 }
 

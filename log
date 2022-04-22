@@ -482,3 +482,14 @@ treemap.c:89:22: error: ‘Pair {aka struct Pair}’ has no member named ‘righ
 cc1: all warnings being treated as errors
 Compilation failed
 f024d57
+Fri Apr 22 15:55:05 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:81:23: error: ‘buscado’ undeclared (first use in this function)
+   while(is_equal(tree,buscado->key,key) == 0)
+                       ^~~~~~~
+treemap.c:81:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+360f806

@@ -79,7 +79,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 {
   
   TreeNode* buscado=tree->root;
-  while(is_equal(tree,buscado->key,key == 0))
+  while(is_equal(tree,key,buscado == 0))
   {
     if(key==buscado->key)
     { 

@@ -126,3 +126,23 @@ treemap.c:95:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 bab59b2
+Fri Apr 22 15:39:16 UTC 2022: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:76:34: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+   while(is_equal(tree,key,buscado->key =! 0))
+                                  ^~
+treemap.c:78:20: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+     if(key==buscado->key)
+                    ^~
+treemap.c:81:14: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+       return 1;
+              ^
+treemap.c:85:21: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+       if(key>buscado->key)
+                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+a03e596

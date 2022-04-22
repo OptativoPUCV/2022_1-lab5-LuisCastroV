@@ -42,3 +42,17 @@ Fri Apr 22 15:24:57 UTC 2022:
  tests:  4|7
 total_score: 5/70
 6df0209
+Fri Apr 22 15:29:46 UTC 2022: 
+ treemap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:74:20: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   TreeMap* buscado=tree->root;
+                    ^~~~
+treemap.c:74:12: error: unused variable ‘buscado’ [-Werror=unused-variable]
+   TreeMap* buscado=tree->root;
+            ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fac73a4

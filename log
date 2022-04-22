@@ -1,0 +1,18 @@
+Fri Apr 22 15:22:26 UTC 2022: 
+ treemap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:41:23: error: ‘lt’ undeclared (first use in this function)
+     map->lower_than = lt
+                       ^~
+treemap.c:41:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:42:5: error: expected ‘;’ before ‘return’
+     return TreeMap;
+     ^~~~~~
+treemap.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+8f3d4a3

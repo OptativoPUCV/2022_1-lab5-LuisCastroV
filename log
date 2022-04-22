@@ -429,3 +429,26 @@ treemap.c:83:32: error: ‘TreeNode {aka struct TreeNode}’ has no member named
                                 ^~
 Compilation failed
 0d76c0a
+Fri Apr 22 15:54:44 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:80:20: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   TreeMap* buscado=tree->root;
+                    ^~~~
+treemap.c:81:30: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘key’
+   while(is_equal(tree,buscado->key,key) == 0)
+                              ^~
+treemap.c:83:32: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘key’
+     if(tree->lower_than(buscado->key,key)== 1)
+                                ^~
+treemap.c:85:22: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘left’
+       buscado=buscado->left;
+                      ^~
+treemap.c:89:22: error: ‘TreeMap {aka struct TreeMap}’ has no member named ‘right’
+       buscado=buscado->right;
+                      ^~
+cc1: all warnings being treated as errors
+Compilation failed
+498600d

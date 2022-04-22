@@ -82,17 +82,17 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
   TreeNode* aux=tree->root;
   int resultado = map->lower_than(aux->key,key);
   printf("%i",resultado);
-  while(is_equal(tree,aux->key,key) == 0)
-  {
-    if(tree->lower_than(aux->key,key)== 1)
-    {
-      aux=aux->left;
-    }
-    else
-    {
-      aux=aux->right;
-    }
-  }
+  // while(is_equal(tree,aux->key,key) == 0)
+  // {
+  //   if(tree->lower_than(aux->key,key)== 1)
+  //   {
+  //     aux=aux->left;
+  //   }
+  //   else
+  //   {
+  //     aux=aux->right;
+  //   }
+  // }
   return NULL;
 }
 

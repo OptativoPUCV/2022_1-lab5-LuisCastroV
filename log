@@ -519,3 +519,23 @@ treemap.c:83:28: error: ‘TreeNode {aka struct TreeNode}’ has no member named
                             ^~
 Compilation failed
 cd6d02b
+Fri Apr 22 16:01:04 UTC 2022: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:83:19: error: ‘map’ undeclared (first use in this function)
+   int resultado = map->lower_than(aux->key,key);
+                   ^~~
+treemap.c:83:19: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:83:38: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+   int resultado = map->lower_than(aux->key,key);
+                                      ^~
+treemap.c:85:26: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+   while(is_equal(tree,aux->key,key) == 0)
+                          ^~
+treemap.c:87:28: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+     if(tree->lower_than(aux->key,key)== 1)
+                            ^~
+Compilation failed
+a167586

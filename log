@@ -56,3 +56,30 @@ treemap.c:74:12: error: unused variable ‘buscado’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 fac73a4
+Fri Apr 22 15:37:47 UTC 2022: 
+ treemap.c | 23 +++++++++++++++++++++--
+ 1 file changed, 21 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:74:20: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   TreeMap* buscado=tree->root;
+                    ^~~~
+treemap.c:75:13: error: expected ‘)’ before ‘tree’
+   (TreeMap* tree, void* key1, void* key2){
+             ^~~~
+treemap.c:76:3: error: expected expression before ‘while’
+   while(is_equal(tree,key,buscado->key =! 0)
+   ^~~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+In file included from test.c:4:0:
+treemap.c:74:12: error: unused variable ‘buscado’ [-Werror=unused-variable]
+   TreeMap* buscado=tree->root;
+            ^~~~~~~
+test.c:606:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+b50828f

@@ -54,11 +54,11 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     //printf("key: %d \n",*(int*)node->pair->key);
     if(tree->lower_than(node->pair->key,key) == 1)
     {
-      aux->right=node;
+      node->right=node;
     }
     else
     {
-      aux->left=node;
+      node->left=node;
     }
     tree->current=node;
   }

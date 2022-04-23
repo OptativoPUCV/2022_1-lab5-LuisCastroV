@@ -48,7 +48,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   Pair *dato=searchTreeMap(tree,key);
   if(dato==NULL)
   {
-    printf("JDAKWW")
+    printf("JDAKWW");
     // TreeNode* aux=tree->current;
     // TreeNode* node=createTreeNode(key,value);
     // node->parent=aux;

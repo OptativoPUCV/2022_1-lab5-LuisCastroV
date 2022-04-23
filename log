@@ -809,3 +809,9 @@ treemap.c:55:42: error: invalid operands to binary - (have ‘int’ and ‘void
                          ~~~~~~~~~~~~~~~~~^
 Compilation failed
 b81e95d
+Sat Apr 23 16:49:49 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|6
+total_score: 15/70
+98b9864

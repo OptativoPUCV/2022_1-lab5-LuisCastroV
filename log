@@ -786,3 +786,16 @@ treemap.c:55:25: error: invalid type argument of unary ‘*’ (have ‘int’)
                          ^~~~~~~~~~~~~~~~~
 Compilation failed
 82fad04
+Sat Apr 23 16:49:12 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:55:5: error: aggregate value used where an integer was expected
+     printf("key: %d \n",*(int)*node->pair-key);
+     ^~~~~~
+treemap.c:55:25: error: invalid type argument of unary ‘*’ (have ‘int’)
+     printf("key: %d \n",*(int)*node->pair-key);
+                         ^~~~~~~~~~~~~~~~~
+Compilation failed
+21aa7d2

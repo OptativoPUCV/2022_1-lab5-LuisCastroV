@@ -706,3 +706,13 @@ Sat Apr 23 16:39:36 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 018d1f6
+Sat Apr 23 16:39:50 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:55:32: error: ‘TreeNode {aka struct TreeNode}’ has no member named ‘key’
+     if(tree->lower_than(key,aux->key)== 1)
+                                ^~
+Compilation failed
+f06ed80

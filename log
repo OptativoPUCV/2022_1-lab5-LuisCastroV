@@ -1105,3 +1105,13 @@ Sat Apr 23 20:19:49 UTC 2022:
  1 file changed, 4 insertions(+), 4 deletions(-)
  tests:  0|0
 7500f89
+Sat Apr 23 20:24:21 UTC 2022: 
+ treemap.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:61:3: error: expected expression before ‘}’ token
+   }
+   ^
+Compilation failed
+f0f622e

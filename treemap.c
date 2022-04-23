@@ -118,7 +118,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
-  TreeNode* node=minimun(tree->root);
+  TreeNode* node=minimum(tree->root);
   
     return node->value;
 }

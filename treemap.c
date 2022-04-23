@@ -54,10 +54,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     //printf("%d",*(int*)nodo->pair->key);
     if(tree->lower_than(nodo->pair->key,key) == 1)
     {
-      nodo=nodo->left;
+      nodo->right=nodo;
     }
     else{
-      nodo=nodo->right;
+      nodo->left=nodo;
     }
     nodo=tree->current;
     // if(tree->lower_than(nodo->pair->key,key) == 1)

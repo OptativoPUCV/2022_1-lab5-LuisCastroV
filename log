@@ -1043,3 +1043,15 @@ Sat Apr 23 19:32:00 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 95172f8
+Sat Apr 23 19:32:27 UTC 2022: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:54:24: error: ‘pair’ undeclared (first use in this function); did you mean ‘Pair’?
+     printf("%d",*(int*)pair->key);
+                        ^~~~
+                        Pair
+treemap.c:54:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d63e66e

@@ -45,22 +45,23 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2))
 
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
-  void *dato=searchTreeMap(tree,key);
+  Pair *dato=searchTreeMap(tree,key);
   if(dato==NULL)
   {
-    TreeNode* aux=tree->current;
-    TreeNode* node=createTreeNode(key,value);
-    node->parent=aux;
-    //if(tree->lower_than(aux->pair->key,key)==1)
-    if(tree->lower_than(key,aux->key)== 1)
-    {
-      aux->left=node;
-    }
-    else
-    {
-      aux->right=node;
-    }
-    tree->current=node;
+    printf("JDAKWW")
+    // TreeNode* aux=tree->current;
+    // TreeNode* node=createTreeNode(key,value);
+    // node->parent=aux;
+    // //if(tree->lower_than(aux->pair->key,key)==1)
+    // if(tree->lower_than(key,aux->key)== 1)
+    // {
+    //   aux->left=node;
+    // }
+    // else
+    // {
+    //   aux->right=node;
+    // }
+    // tree->current=node;
   }
 }
 

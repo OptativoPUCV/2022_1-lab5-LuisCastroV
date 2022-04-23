@@ -119,7 +119,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) {
   TreeNode* node=minimum(tree->root);
-  return node->value;
+  return node->pair;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {

@@ -773,3 +773,16 @@ treemap.c:55:5: error: format not a string literal and no format arguments [-Wer
 cc1: all warnings being treated as errors
 Compilation failed
 697f569
+Sat Apr 23 16:48:48 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:55:5: error: aggregate value used where an integer was expected
+     printf("key: %d \n",*(int)*node->pair-key);
+     ^~~~~~
+treemap.c:55:25: error: invalid type argument of unary ‘*’ (have ‘int’)
+     printf("key: %d \n",*(int)*node->pair-key);
+                         ^~~~~~~~~~~~~~~~~
+Compilation failed
+82fad04

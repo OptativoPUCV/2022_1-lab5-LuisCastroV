@@ -1514,3 +1514,20 @@ treemap.c:138:13: error: variable ‘dato’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 aa8fcaf
+Sun Apr 24 20:23:51 UTC 2022: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:147:12: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       dato = tree->current->pair;
+            ^
+treemap.c:138:13: error: variable ‘dato’ set but not used [-Werror=unused-but-set-variable]
+   TreeNode* dato;
+             ^~~~
+treemap.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+2e89064

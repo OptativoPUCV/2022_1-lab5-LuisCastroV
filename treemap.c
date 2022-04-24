@@ -148,9 +148,8 @@ Pair * upperBound(TreeMap * tree, void* key)
     }
     else
     {
-      nextTreeMap(tree);
+      return nextTreeMap(tree);
     }
-    return;
   }
 }
 

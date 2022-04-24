@@ -150,7 +150,11 @@ Pair * nextTreeMap(TreeMap * tree)
   }
   else
   {
-    return 0;
+     while(tree->current->parent!=NULL && tree->lower_than(tree->current->pair->key,tree->current->parent->pair->key)!=1)
+    {
+      tree->current=tree->current->parent;
+    }
+    aux=tree->current->parent;
   }
   tree->current=aux;
   if(aux==NULL)

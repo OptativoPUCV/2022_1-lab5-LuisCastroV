@@ -135,22 +135,33 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 Pair * upperBound(TreeMap * tree, void* key) 
 {
   Pair* aux=searchTreeMap(tree,key);
-  TreeNode* dato;
-  if(aux!=NULL)
-  {
-    return aux;
-  }
-  else
+  while(aux==NULL)
   {
     if(tree->lower_than(tree->current->pair->key,key)==1)
     {
-      dato = tree->current->pair;
+      return tree->current->pair;
     }
     else
     {
-      return nextTreeMap(tree);
+      aux= nextTreeMap(tree);
     }
   }
+  return aux;
+  // if(aux!=NULL)
+  // {
+  //   return aux;
+  // }
+  // else
+  // {
+  //   if(tree->lower_than(tree->current->pair->key,key)==1)
+  //   {
+  //     dato = tree->current->pair;
+  //   }
+  //   else
+  //   {
+  //     return nextTreeMap(tree);
+  //   }
+  // }
 }
 
 Pair * firstTreeMap(TreeMap * tree) {

@@ -137,7 +137,7 @@ Pair * upperBound(TreeMap * tree, void* key)
   Pair* aux=searchTreeMap(tree,key);
   if(aux!=NULL)
   {
-    return aux;
+    aux=aux;
   }
   else
   {

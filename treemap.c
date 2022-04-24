@@ -157,9 +157,9 @@ Pair * nextTreeMap(TreeMap * tree)
     aux=tree->current->parent;
   }
   tree->current=aux;
-  if(aux==NULL)
-  {
-    return NULL;
-  }
+  // if(aux==NULL)
+  // {
+  //   return NULL;
+  // }
   return aux->pair;
 }

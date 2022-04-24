@@ -109,7 +109,10 @@ void removeNode(TreeMap * tree, TreeNode* node)
         node->parent->left=NULL;
       }
     }
-    return NULL;
+    else
+    {
+      tree->current=NULL;
+    }
   }
 }
 

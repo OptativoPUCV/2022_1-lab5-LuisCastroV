@@ -1640,3 +1640,17 @@ Sun Apr 24 21:16:52 UTC 2022:
  tests:  27|1
 total_score: 60/70
 6f0e3de
+Sun Apr 24 21:21:31 UTC 2022: 
+ treemap.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘removeNode’:
+treemap.c:112:12: error: ‘return’ with a value, in function returning void [-Werror]
+     return NULL;
+            ^~~~
+treemap.c:97:6: note: declared here
+ void removeNode(TreeMap * tree, TreeNode* node)
+      ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ec1f178

@@ -156,10 +156,10 @@ Pair * nextTreeMap(TreeMap * tree)
     }
     aux=tree->current->parent;
   }
-  tree->current=aux;
-  // if(aux==NULL)
-  // {
-  //   return NULL;
-  // }
+  //tree->current=aux;
+  if(tree->current==NULL)
+  {
+    return NULL;
+  }
   return aux->pair;
 }

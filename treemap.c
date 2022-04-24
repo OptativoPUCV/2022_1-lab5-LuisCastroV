@@ -78,10 +78,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
           tree->current=tree->current->left;
         }
         tree->current=tree->current->left;
+        return;
       }
       
     }
-    return;
   }
 }
 

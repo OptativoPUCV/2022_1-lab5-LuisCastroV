@@ -135,6 +135,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 Pair * upperBound(TreeMap * tree, void* key) 
 {
   Pair* aux=searchTreeMap(tree,key);
+  TreeNode* dato;
   if(aux!=NULL)
   {
     return aux;
@@ -143,12 +144,13 @@ Pair * upperBound(TreeMap * tree, void* key)
   {
     if(tree->lower_than(tree->current->pair->key,key)==1)
     {
-      return tree->current->pair;
+      dato = tree->current->pair;
     }
     else
     {
-      return nextTreeMap(tree);
+      nextTreeMap(tree);
     }
+    return dato;
   }
 }
 

@@ -154,7 +154,7 @@ Pair * nextTreeMap(TreeMap * tree)
     {
       tree->current=tree->current->parent;
     }
-    next=tree->current->parent;
+    aux=tree->current->parent;
   }
   tree->current=aux;
   if(aux==NULL)

@@ -139,7 +139,10 @@ Pair * upperBound(TreeMap * tree, void* key)
   {
     return aux;
   }
-  return NULL;
+  else
+  {
+    return NULL;
+  }
 }
 
 Pair * firstTreeMap(TreeMap * tree) {

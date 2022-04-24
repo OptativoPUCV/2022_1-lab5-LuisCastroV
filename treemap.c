@@ -150,7 +150,7 @@ Pair * nextTreeMap(TreeMap * tree)
   }
   else
   {
-    printf("fds");
+    return 0;
   }
   tree->current=aux;
   if(aux==NULL)

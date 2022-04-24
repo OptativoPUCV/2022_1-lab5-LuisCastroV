@@ -153,4 +153,8 @@ Pair * nextTreeMap(TreeMap * tree)
 
   // }
   tree->current=aux;
+  if(aux==NULL)
+  {
+    return NULL;
+  }
 }

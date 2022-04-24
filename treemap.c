@@ -150,7 +150,7 @@ Pair * upperBound(TreeMap * tree, void* key)
     {
       nextTreeMap(tree);
     }
-    return dato;
+    return;
   }
 }
 

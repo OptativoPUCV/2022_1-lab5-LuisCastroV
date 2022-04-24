@@ -141,12 +141,13 @@ Pair * upperBound(TreeMap * tree, void* key)
   }
   else
   {
-    if(tree->lower_than(tree->current->pair->key,key))
+    if(tree->lower_than(tree->current->pair->key,key)==1)
     {
       return tree->current->pair;
     }
     aux= nextTreeMap(tree);
   }
+  return aux;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {

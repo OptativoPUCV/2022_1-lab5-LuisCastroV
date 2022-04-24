@@ -1400,3 +1400,14 @@ Sun Apr 24 18:10:51 UTC 2022:
  tests:  23|2
 total_score: 45/70
 b73025f
+Sun Apr 24 18:11:10 UTC 2022: 
+ treemap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:137:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+   Pair* aux=searchTreeMap(tree,key);
+         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+f2e37ee

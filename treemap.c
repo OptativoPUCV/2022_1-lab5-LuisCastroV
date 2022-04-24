@@ -134,11 +134,11 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 
 Pair * upperBound(TreeMap * tree, void* key) 
 {
-  // Pair* aux=searchTreeMap(tree,key);
-  // if(aux!=NULL)
-  // {
-  //   return aux;
-  // }
+  Pair* aux=searchTreeMap(tree,key);
+  if(aux!=NULL)
+  {
+    return aux;
+  }
   return NULL;
 }
 

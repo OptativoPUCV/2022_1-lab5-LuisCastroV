@@ -150,11 +150,7 @@ Pair * nextTreeMap(TreeMap * tree)
   }
   else
   {
-    while(tree->current->parent!=NULL && tree->lower_than(tree->current->pair->key,tree->current->parent->pair->key)!=1)
-    {
-      tree->current=tree->current->parent;
-    }
-    aux=tree->current->parent;
+    printf("fds");
   }
   tree->current=aux;
   if(aux==NULL)

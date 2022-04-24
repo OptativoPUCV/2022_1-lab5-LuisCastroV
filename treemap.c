@@ -41,8 +41,32 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2))
   return tree;
 }
 
-void insertTreeMap(TreeMap * tree, void* key, void * value) {
-  
+// Comienza en la raíz del árbol y realiza una búsqueda de la clave del dato a insertar (e.g., 13). 
+// Justo antes de llegar a un NULL (e.g., aux->left==NULL), se crea un nodo n con la clave y el dato y se inserta como hijo correspondiente del último nodo actual:
+// aux->left = n; n->parent = aux
+
+void insertTreeMap(TreeMap * tree, void* key, void * value) 
+{
+  TreeNode* n;
+  tree->current=tree->root;
+  while(tree->current!=NULL)
+  {
+    if(is_equal(tree,key,tree->current->pair->key)==1)
+    {
+      return;
+    }
+    else
+    {
+    //   if(tree->lower_than(key,tree->current->pair->key)==1)
+    //   {
+    //     aux=aux->right;
+    //   }
+    //   else
+    //   {
+    //     aux=aux->left;
+    //   }
+    // }
+  }
 }
 
 TreeNode * minimum(TreeNode * x){

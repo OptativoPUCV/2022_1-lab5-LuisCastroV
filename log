@@ -1429,3 +1429,23 @@ Sun Apr 24 18:11:46 UTC 2022:
  tests:  23|2
 total_score: 45/70
 95b5c4b
+Sun Apr 24 19:26:40 UTC 2022: 
+ treemap.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:148:14: error: ‘Pair {aka struct Pair}’ has no member named ‘right’
+       aux=aux->right;
+              ^~
+treemap.c:152:14: error: ‘Pair {aka struct Pair}’ has no member named ‘left’
+       aux=aux->left;
+              ^~
+treemap.c:155:3: error: ‘return’ with no value, in function returning non-void [-Werror]
+   return;
+   ^~~~~~
+treemap.c:135:8: note: declared here
+ Pair * upperBound(TreeMap * tree, void* key)
+        ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3f5ff27

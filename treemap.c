@@ -104,13 +104,9 @@ void removeNode(TreeMap * tree, TreeNode* node)
     }
     else
     {
-      if(node->parent->right==node)
+      if(node->parent->right==node || node->parent->left==node )
       {
-        node->parent->right=NULL;
-      }
-      else
-      {
-        node->parent->left=NULL;
+        node=NULL;
       }
     }
   }

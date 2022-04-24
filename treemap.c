@@ -134,8 +134,6 @@ Pair * searchTreeMap(TreeMap * tree, void* key)
 
 Pair * upperBound(TreeMap * tree, void* key) 
 {
-  // Busqeueda:
-  // La cual busca el nodo con clave igual a key y retorna el Pair asociado al nodo
   Pair* aux=searchTreeMap(tree,key);
   if(aux!=NULL)
   {
@@ -146,11 +144,7 @@ Pair * upperBound(TreeMap * tree, void* key)
     if(tree->lower_than(tree->current->pair->key,key)==1)
     {
       return tree->current->pair;
-    }
-    else
-    {
-      aux=aux->left;
-    }
+      }
   }
 }
 

@@ -148,9 +148,9 @@ Pair * nextTreeMap(TreeMap * tree)
   {
     aux=minimum(tree->current->right);
   }
-  else
-  {
+  // else
+  // {
 
-  }
+  // }
   tree->current=aux;
 }

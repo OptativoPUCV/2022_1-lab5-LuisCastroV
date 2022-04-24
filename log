@@ -1449,3 +1449,17 @@ treemap.c:135:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 3f5ff27
+Sun Apr 24 20:16:46 UTC 2022: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘upperBound’:
+treemap.c:152:14: error: ‘Pair {aka struct Pair}’ has no member named ‘left’
+       aux=aux->left;
+              ^~
+treemap.c:155:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+b86bf6e
